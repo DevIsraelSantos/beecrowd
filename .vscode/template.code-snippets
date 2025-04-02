@@ -1,0 +1,21 @@
+{
+	"Print to console": {
+		"scope": "javascript",
+		"prefix": "init",
+		"body": [
+			"try{",
+			"\tvar input = require('fs').readFileSync('/dev/stdin', 'utf8');",
+			"}catch{",
+			"\tvar input = require('fs').readFileSync('./${TM_FILENAME_BASE}/input.txt', 'utf8');",
+			"}",
+			"var lines = input.split('\\n');\n",
+			"function get(type) {",
+  	  		"switch (type) {",
+       		"case 'n': return Number(lines.shift());",
+        	"case 'b': return Boolean(lines.shift() === 'true');",
+        	"default: return lines.shift();}}"
+			
+		],
+		"description": "Init new beecrow code snippet"
+	}
+}

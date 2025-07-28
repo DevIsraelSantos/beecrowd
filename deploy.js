@@ -35,3 +35,9 @@ fs.readdirSync(demoDir).forEach((file) => {
   fs.copyFileSync(demoFilePath, destFilePath);
 });
 console.log(`src: restaurado com os arquivos`);
+
+// 3. Commit a pasta do problema
+const { execSync } = require("child_process");
+execSync(`git add ${problemDir}`);
+execSync(`git commit -m "${problem}"`);
+console.log(`Commit realizado para o problema ${problem}`);

@@ -1,0 +1,25 @@
+{
+  "name": "beecrowd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/main.js",
+    "deploy": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevIsraelSantos/beecrowd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevIsraelSantos/beecrowd/issues"
+  },
+  "homepage": "https://github.com/DevIsraelSantos/beecrowd#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

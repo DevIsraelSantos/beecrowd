@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "src/*"
+    ],
+    "ext": "*",
+    "exec": "node src/main.js"
+}

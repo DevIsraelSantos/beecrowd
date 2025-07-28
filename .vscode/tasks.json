@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "deployArg",
+      "type": "promptString",
+      "description": "Digite o argumento para o deploy",
+      "default": "5"
+    }
+  ],
+  "tasks": [
+    {
+      "label": "Deploy com argumento",
+      "type": "shell",
+      "command": "npm run deploy -- ${input:deployArg}",
+      "problemMatcher": []
+    }
+  ]
+}

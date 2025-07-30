@@ -6,4 +6,10 @@ try {
 }
 var lines = input.trim().split("\n");
 
-console.log("Demo", lines.shift());
+function main() {
+  const fisrtValue = lines.shift();
+
+  console.log({ fisrtValue });
+}
+
+main();
